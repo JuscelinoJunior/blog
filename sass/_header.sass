@@ -1,6 +1,58 @@
 .container
-	+make-md-column(12)
+	width: 100%
+	height: 100vh
 	padding: 0
 	margin: 0
 	border-radius: 0
-	background-color: $primary-color
+	background-size: cover
+	nav
+		background-color: transparent
+		border: none
+		border-radius: none
+		font: 35px $font-main
+		margin: 0 auto
+		//background-color: $primary-color
+		background-color: transparentize($primary-color, 0.6)
+		//opacity: 0.6
+		.nav>li>a
+			color: $secondary-color
+.item-menu
+	border-style: solid
+	border-width: 0 0 5px 0
+	margin-right: 30px
+
+.item-menu:hover
+	color: $secondary-color
+
+#item-filmes
+	border-color: $filmes-color	
+#item-series
+	border-color: $series-color	
+#item-hq
+	border-color: $hq-color
+#item-livros
+	border-color: $livros-color
+
+#item-filmes:hover
+	transition: 0.4s linear
+	background-color: $filmes-color	
+#item-series:hover
+	transition: 0.4s linear
+	background-color: $series-color	
+#item-hq:hover
+	transition: 0.4s linear
+	background-color: $hq-color
+#item-livros:hover
+	transition: 0.4s linear
+	background-color: $livros-color	
+
+.fa-search
+	color: $secondary-color
+
+
+.row
+	+make-md-column(12)
+
+.item-post
+	+make-md-column(6)
+
