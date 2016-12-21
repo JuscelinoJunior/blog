@@ -1,0 +1,111 @@
+.posts
+	+make-md-column(9)
+	top: 30px	
+	padding: 0
+.item-post
+	+make-md-column(6)
+	margin-bottom: 30px
+	overflow: hidden
+	@media screen and (max-width: $tablet)
+	@media screen and (max-width: $celular)
+		margin-bottom: 10px
+	img
+		transition: 0.3s linear
+	figure
+		overflow: hidden
+	&:hover h2
+		display: block
+	&:hover img
+		transform: scale(1.05)
+		transition: 0.3s linear
+.titulo-post
+	position: absolute
+	bottom: 0
+	background-color: transparentize($primary-color, 0.6)
+	font-family: $font-main
+	.texto-titulo-post
+		margin: 10px
+	h1
+		margin-top: 0
+		font-size: 40px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 2px
+		margin-top: 2px
+		font-weight: normal
+		line-height: 35px
+		@media screen and(max-width: $tablet)
+			line-height: 20px
+			font-size: 30px
+		@media screen and (max-width: $celular)
+			margin-bottom: 1px
+			margin-top: 1px
+			font-size: 17px
+	h2
+		display: none
+		margin: 0
+		font-size: 25px
+		color: $secondary-color
+		font-weight: normal
+		line-height: 20px
+		@media screen and (max-width: $tablet)
+			display: block
+			line-height: 25px
+		@media screen and (max-width: $celular)
+			line-height: 12px
+			font-size: 13px
+#txt-filme
+	color: $filmes-color
+#txt-serie
+	color: $series-color
+#txt-hq
+	color: $hq-color
+#txt-livro
+	color: $livros-color	
+
+.post-ver-mais
+	+make-md-column(12)
+	.ver-mais
+		margin-bottom: 30px
+		+make-md-column-offset(5)
+		+make-sm-column-offset(4)
+		+make-md-column(2)
+		+make-sm-column(4)
+		background-color: $primary-color
+		text-transform: uppercase
+		text-align: center
+		font-size: 40px
+		font-family: $font-main 
+		color: $secondary-color
+
+.sidebar
+	+make-md-column(3)
+	top: 30px
+	font-size: 25px
+	@media screen and (max-width: $tablet)
+	@media screen and (max-width: $celular)
+		font-size: 20px
+	.conteudo-sidebar
+		width: 100%
+		background-color: $secondary-color
+		font-family: $font-main
+		.titulo-conteudo-sidebar
+			width: 100%
+			background-color: $primary-color
+			text-transform: uppercase
+			font-size: 40px
+			color: $secondary-color
+			text-align: center
+			@media screen and (max-width: $tablet)
+			@media screen and (max-width: $celular)
+				font-size: 30px
+		p
+			line-height: 24px
+			padding-left: 10px
+		.lista-mais-lidos
+			list-style: none
+			margin-top: 10px
+			margin-bottom: 10px
+			padding-left: 10px
+			.item-lista-mais-lidos
+				margin-bottom: 10px

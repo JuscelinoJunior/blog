@@ -9,7 +9,8 @@
 	</head>
 
 	<body>
-		<header class="container" style="background: url(images/RogueOne.jpg) center no-repeat">
+		<!--<header class="container"-->
+		<section class="topo" style="background: url(images/RogueOne.jpg) center no-repeat">
 			<nav class="navbar navbar-default">
 			  	<div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,12 +41,106 @@
 			</nav>
 			<div class="titulo-header">
 				<div class="texto-titulo-header">
-					<h1 class="titulo-header-post">ROGUE ONE: UMA HISTÓRIA STAR WARS</h1>
-					<h2 class="sub-header-post">Derivado é o filme com mais comentário social e político da saga</h2>
+					<h1>ROGUE ONE: UMA HISTÓRIA STAR WARS</h1>
+					<h2>Derivado é o filme com mais comentário social e político da saga</h2>
 				</div>
 			</div>
-		</header>
+		</section>	
+			<section class="container-fluid">
+				<div class="posts">
+					<div class="item-post">
+						<figure><img src="images/RogueOne.jpg" class="img-responsive img-post"></figure>
+						<div class="titulo-post">
+							<div class="texto-titulo-post">
+								<h1 id="txt-filme">ROGUE ONE: UMA HISTÓRIA STAR WARS</h1>
+								<h2>Derivado é o filme com mais comentário social e político da saga</h2>
+							</div>
+						</div>
+					</div>
+					<div class="item-post">
+						<figure><img src="images/trilogia-classica.jpg" class="img-responsive"></figure>
+						<div class="titulo-post">
+							<div class="texto-titulo-post">
+								<h1 id="txt-filme">STAR WARS: TRILOGIA CLÁSSICA</h1>
+								<h2 id>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum, voluptas corporis voluptatum quaerat odio tempora temporibus ad quod, fuga excepturi eius praesentium. Temporibus cupiditate autem veniam rerum, accusamus magnam!</h2>
+							</div>
+						</div>	
+					</div>
+					<div class="item-post">
+						<figure><img src="images/house-of-cards.jpg" class="img-responsive"></figure>
+						<div class="titulo-post">
+								<div class="texto-titulo-post">
+									<h1 id="txt-serie">HOUSE OF CARDS</h1>
+									<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate obcaecati repellendus adipisci iure consectetur temporibus recusandae veniam illum iste dolore odit architecto, at officiis harum error officia nisi nulla consequatur.</h2>
+								</div>
+						</div>
+					</div>
+					<div class="item-post">
+						<figure><img src="images/despertar-da-forca.jpg" class="img-responsive"></figure>
+						<div class="titulo-post">
+							<div class="texto-titulo-post">
+								<h1 id="txt-filme">O Despertar da Força</h1>
+								<h2 id>Derivado é o filme com mais comentário social e político da saga</h2>
+							</div>
+						</div>
+					</div>	
+					<div class="item-post">
+						<figure><img src="images/guerra-das-armaduras.png" class="img-responsive"></figure>
+						<div class="titulo-post">
+							<div class="texto-titulo-post">
+								<h1 id="txt-hq">A Guerra das Armaduras</h1>
+								<h2>Derivado é o filme com mais comentário social e político da saga</h2>
+							</div>
+						</div>
+					</div>	
+					<div class="item-post">
+						<figure><img src="images/guerra-dos-tronos.jpg" class="img-responsive"></figure>
+						<div class="titulo-post">
+							<div class="texto-titulo-post">
+								<h1 id="txt-livro">A Guerra dos Tronos</h1>
+								<h2 id>Derivado é o filme com mais comentário social e político da saga</h2>
+							</div>
+						</div>
+					</div>
+					<div class="item-post post-ver-mais">
+						<div class="ver-mais">Ver Mais</div>
+					</div>
+					</div>
+					<div class="sidebar">
+						<div class="conteudo-sidebar">
+							<div class="titulo-conteudo-sidebar">
+								Sobre Nós
+							</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut molestias necessitatibus ipsam, praesentium illo libero cupiditate assumenda repudiandae odio ratione! Accusantium nulla debitis natus facere earum, mollitia nesciunt explicabo beatae!</p>
+						</div>
+						<div class="conteudo-sidebar">
+							<div class="titulo-conteudo-sidebar">
+								Mais Lidos
+							</div>
+								<ul class="lista-mais-lidos">
+									<li class="item-lista-mais-lidos" id="txt-filme">Rogue One: Uma História Star Wars</li>
+									<li class="item-lista-mais-lidos" id="txt-filme">O Despertar da Força</li>
+									<li class="item-lista-mais-lidos" id="txt-livro">A Guerra dos Tronos</li>
+									<li class="item-lista-mais-lidos" id="txt-serie">House of Cards</li>
+									<li class="item-lista-mais-lidos" id="txt-hq">A Guerra das Armaduras</li>
+								</ul>
+							</ul>
+						</div>
+					</div>		
+		</section>		
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>		
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function mudarLarguraDivPost(){
+			var width = $(".img-post").width();
+			$(".titulo-post").css("width", width);
+		}
+		$(document).ready(function () {
+			mudarLarguraDivPost();
+			$(window).resize(function(){
+	   			mudarLarguraDivPost();
+	  		});	
+	  	});	
+	</script>
 	</body>
 </html>
