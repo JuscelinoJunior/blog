@@ -32,7 +32,7 @@
 						    <li><a href="#" class="item-menu" id="item-livros">Livros</a></li>
 			      		</ul>
 			      		<ul class="nav navbar-nav navbar-right">
-				        	<li><a data-toggle="modal" data-target="#myModal"><span class="fa fa-search"></span></a></li>
+				        	<li><a data-toggle="modal" data-target="#modal-pesquisa"><span class="fa fa-search"></span></a></li>
 			   			</ul>
 			    	</div><!-- /.navbar-collapse -->
 			  	</div><!-- /.container-fluid -->
@@ -149,22 +149,24 @@
 	</footer>
 
 			<!-- Modal -->
-			<div id="myModal" class="modal fade" role="dialog">
+			<div id="modal-pesquisa" class="modal fade" role="dialog">
 			  <div class="modal-dialog">
 
 			    <!-- Modal content-->
 			    <div class="modal-content">
-			      <div class="modal-body">
+			      <!--<div class="modal-body">-->
 			      	<button type="button" class="close" data-dismiss="modal">&times;</button>
-			        <span>Procure pelo site</span>
-			        <form>
-			        	<input type="text" class="input-busca">
-			        </form>
-			      </div>
+			      	<div id="conteudo-modal-pesquisa">
+				        <span>Procure pelo site</span>
+				        <form>
+				        	<input type="text" class="input-busca">
+				        </form>
+			        </div>
+			      <!--</div>-->
 			    </div>
 
 			  </div>
-			</div>			
+			  </div>			
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>		
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
