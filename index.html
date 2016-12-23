@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="css/vendors/plugins.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-
 	<body>
 		<!--<header class="container"-->
 		<section class="topo" style="background: url(images/RogueOne.jpg) center no-repeat">
@@ -33,14 +32,14 @@
 						    <li><a href="#" class="item-menu" id="item-livros">Livros</a></li>
 			      		</ul>
 			      		<ul class="nav navbar-nav navbar-right">
-				        	<li><span class="fa fa-search"></span></li>
+				        	<li><a data-toggle="modal" data-target="#myModal"><span class="fa fa-search"></span></a></li>
 			   			</ul>
 			    	</div><!-- /.navbar-collapse -->
 			  	</div><!-- /.container-fluid -->
 			</nav>
 			<div class="titulo-header">
 				<div class="texto-titulo-header">
-					<h1>ROGUE ONE: UMA HISTÓRIA STAR WARS</h1>
+					<h1 id="txt-filme">Rogue One: Uma História Star Wars</h1>
 					<h2>Derivado é o filme com mais comentário social e político da saga</h2>
 				</div>
 			</div>
@@ -147,9 +146,27 @@
 				<a href="https://github.com/JuscelinoJunior/"><span class="fa fa-github"></span></a>
 			</div>
 		</div>
-	</footer>			
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>		
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</footer>
+
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-body">
+			      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <span>Procure pelo site</span>
+			        <form>
+			        	<input type="text" class="input-busca">
+			        </form>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>			
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>		
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		function mudarLarguraDivPost(){
 			var width = $(".img-post").width();
@@ -161,6 +178,63 @@
 	   			mudarLarguraDivPost();
 	  		});	
 	  	});	
+
+	  	/*$(document).ready(function () {
+		    $('.topo').attr('style', 'background:url(images/RogueOne.jpg) no-repeat center');
+
+		});
+		var imgsArray = ['images/RogueOne.jpg', 'images/trilogia-classica.jpg', 'images/house-of-cards.jpg', 'images/despertar-da-forca.jpg', 'images/guerra-das-armaduras.png', 'images/guerra-dos-tronos.jpg'];
+
+		setInterval(function () {
+		    for (var i = 0; i < imgsArray.length; i++) {
+		        $('.topo').attr('style', 'background: url(' + imgsArray[i] + ') no-repeat');
+		    }
+		}, 3000);*/
+
+		  	/*$(document).ready(setInterval(function(){
+			
+				setTimeout(function(){	
+					$(".topo").css("background-image","url(images/RogueOne.jpg)");
+					$(".topo h1").text("Rogue One: Uma História Star Wars");
+					$(".topo h2").text("Derivado é o filme com mais comentário social e político da saga");
+					$(".topo h1").attr("id","txt-filme");
+				}, 0);
+
+				setTimeout(function(){	
+					$(".topo").css("background-image","url(images/trilogia-classica.jpg)");
+					$(".topo h1").text("Star Wars: Trilogia Clássica");
+					$(".topo h2").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum, voluptas corporis voluptatum quaerat odio tempora temporibus ad quod, fuga excepturi eius praesentium. Temporibus cupiditate autem veniam rerum, accusamus magnam!");
+					$(".topo h1").attr("id","txt-filme");
+				}, 3000);
+
+				setTimeout(function(){	
+					$(".topo").css("background-image","url(images/house-of-cards.jpg)");
+					$(".topo h1").text("House of Cards");
+					$(".topo h2").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum, voluptas corporis voluptatum quaerat odio tempora temporibus ad quod, fuga excepturi eius praesentium. Temporibus cupiditate autem veniam rerum, accusamus magnam!");
+					$(".topo h1").attr("id","txt-serie");
+				}, 6000);
+
+				setTimeout(function(){	
+					$(".topo").css("background-image","url(images/despertar-da-forca.jpg)");
+					$(".topo h1").text("O Despertar da Força");
+					$(".topo h2").text("Derivado é o filme com mais comentário social e político da saga");
+					$(".topo h1").attr("id","txt-filme");
+				}, 9000);
+
+				setTimeout(function(){	
+					$(".topo").css("background-image","url(images/guerra-das-armaduras.png)");
+					$(".topo h1").text("A Guerra das Armaduras");
+					$(".topo h2").text("Derivado é o filme com mais comentário social e político da saga");
+					$(".topo h1").attr("id","txt-hq");
+				}, 12000);
+				
+				setTimeout(function(){	
+					$(".topo").css("background-image","url(images/guerra-dos-tronos.jpg)");
+					$(".topo h1").text("A Guerra dos Tronos");
+					$(".topo h2").text("Derivado é o filme com mais comentário social e político da saga");
+					$(".topo h1").attr("id","txt-livro");
+				}, 15000);
+			}, 18000));*/		
 	</script>
 	</body>
 </html>
