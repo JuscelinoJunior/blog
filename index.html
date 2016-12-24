@@ -138,35 +138,28 @@
 						</div>
 					</div>		
 		</section>
-	<footer>
-		<div class="container-fluid">
-			<div class="conteudo-footer">
-				Desenvolvido por Juscelino Junior<br>
-				<a href="https://www.facebook.com/juniorjuscelino"><span class="fa fa-facebook"></span></a>
-				<a href="https://github.com/JuscelinoJunior/"><span class="fa fa-github"></span></a>
+		<footer>
+			<div class="container-fluid">
+				<div class="conteudo-footer">
+					Desenvolvido por Juscelino Junior<br>
+					<a href="https://www.facebook.com/juniorjuscelino"><span class="fa fa-facebook"></span></a>
+					<a href="https://github.com/JuscelinoJunior/"><span class="fa fa-github"></span></a>
+				</div>
 			</div>
-		</div>
-	</footer>
-
-			<!-- Modal -->
-			<div id="modal-pesquisa" class="modal fade" role="dialog">
-			  <div class="modal-dialog">
-
-			    <!-- Modal content-->
-			    <div class="modal-content">
-			      <!--<div class="modal-body">-->
-			      	<button type="button" class="close" data-dismiss="modal">&times;</button>
-			      	<div id="conteudo-modal-pesquisa">
-				        <span>Procure pelo site</span>
-				        <form>
-				        	<input type="text" class="input-busca">
-				        </form>
-			        </div>
-			      <!--</div>-->
-			    </div>
-
-			  </div>
-			  </div>			
+		</footer>
+		<div id="modal-pesquisa" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				    <button type="button" class="close" data-dismiss="modal">&times;</button>
+				      <div id="conteudo-modal-pesquisa">
+					       <span>Procure pelo site</span>
+					       <form>
+					        <input type="text" class="input-busca">
+					       </form>
+				       </div>
+				   </div>
+			</div>
+		</div>			
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>		
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
@@ -193,9 +186,24 @@
 		    }
 		}, 3000);*/
 
-		  	/*$(document).ready(setInterval(function(){
-			
-				setTimeout(function(){	
+			/*var imgsArray = ["images/RogueOne.jpg", "images/trilogia-classica.jpg", "images/house-of-cards.jpg", "images/despertar-da-forca.jpg", "images/guerra-das-armaduras.png", "images/guerra-dos-tronos.jpg"];
+			var imgs = 0;
+
+		  	function troca(){
+		  		if (imgs<imgsArray.length-1){
+		  			imgs++;
+		  		}else{
+		  			imgs = 0;
+		  		}
+			  	$(".topo").fadeOut(500);
+			  	setTimeout("$('.topo').css('background-image','url(" + imgsArray[i] + ")');$('.topo').fadeIn(500);",500);
+			}
+			setInterval("troca();", 3000);	
+				/*$(".topo h1").text("Rogue One: Uma História Star Wars");
+				$(".topo h2").text("Derivado é o filme com mais comentário social e político da saga");
+				$(".topo h1").attr("id","txt-filme");*/	
+
+				/*setTimeout(function(){	
 					$(".topo").css("background-image","url(images/RogueOne.jpg)");
 					$(".topo h1").text("Rogue One: Uma História Star Wars");
 					$(".topo h2").text("Derivado é o filme com mais comentário social e político da saga");
@@ -236,7 +244,7 @@
 					$(".topo h2").text("Derivado é o filme com mais comentário social e político da saga");
 					$(".topo h1").attr("id","txt-livro");
 				}, 15000);
-			}, 18000));*/		
+			}, 3000));*/	
 	</script>
 	</body>
 </html>
