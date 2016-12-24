@@ -15,13 +15,23 @@
 		background-color: transparentize($primary-color, 0.6)
 		//opacity: 0.6
 		margin-bottom: 0
+		.navbar-header
+			ul
+				display: none
+				@media (max-width: $grid-float-breakpoint)
+					display: block
+		.navbar-collapse
+			.navbar-right
+				display: block
+				@media (max-width: $grid-float-breakpoint)
+					display: none			
 		.nav>li>a
 			color: $secondary-color
 		.nav>li>a:hover
 			color: $secondary-color	
 		.navbar-right
 			a
-				padding: 5px
+				padding: 5px		
 		@media screen and(max-width: $tablet)
 			font-size: 25px	
 			//height: 20px			
